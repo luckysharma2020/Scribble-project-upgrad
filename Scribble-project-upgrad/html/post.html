@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="header">
+        
+        <input class="headerButtons" type="button" onclick="toggleSignUpModal();" value="Sign Up">
+        <input class="headerButtons" type="button" onclick="toggleSignInModal();" value="Sign In">
+        <a class="pageTitle">ScriBBler</a>
+        <p class="subHeading">Explore, Imagine, Create</p>
+    </div>
+
+    <div class="modal" id="signInModal">
+        
+        <div class="headerModalContent">
+            <span class="modalClose" onclick="toggleSignInModal();">&times;</span>
+            <h1>Welcome Back!</h1>
+            <hr>
+            <form>
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+                <input id="signInBtn" type="submit" value="Sign In">
+            </form>
+            <h3>Not a member?
+                <a id="signUpRedirect" onclick="signUpModalRedirect();" href="javascript:void(0);">Sign Up</a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="modal" id="signUpModal">
+        
+        <div class="headerModalContent">
+            <span class="modalClose" onclick="toggleSignUpModal();">&times;</span>
+            <h1>Get Started</h1>
+            <hr>
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Full Name" required>
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" required>
+                <input id="signUpBtn" type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+
+    <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+            <h id="blogTitleNew">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h>
+        </div>
+
+        <div class="blogAuthor">
+        
+            <button id="editPostBtn" onclick="editPostAction();">Edit <i class="fa fa-edit"></i></button>
+            <p>Srishti Gupta</p>
+        </div>
+
+        <div class="blogText">
+            <p id="blogBody">
+                Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.
+            </p>
+        </div>
+
+        
+        <div class="likeBlog">
+            <button id="likeBlogBtn" onclick="likePostAction();"><i class="fa fa-thumbs-up"> Like</i></button>
+            <p id="likeCountText">Be the first one to like this!</p>
+        </div>
+
+        <div class="blogComments">
+            <textarea id="userComment" placeholder="Leave a comment..."></textarea>
+            <button id="addUserCommentBtn" onclick="addUserCommentAction(userComment);">Comment</button>
+            <h4>All Comments</h4>
+            <div id="userCommentList"></div>
+        </div>
+    </div>
+
+    <script src="..\js\post.js" defer></script>
+    <script src="..\js\header.js"></script>
+</body>
+
+</html>

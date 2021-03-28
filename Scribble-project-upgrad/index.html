@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    
+    <div id="main-container-div">
+        <div class="header">
+    
+            <input class="headerButtons" type="button" onclick="toggleSignUpModal();" value="Sign Up">
+            <input class="headerButtons" type="button" onclick="toggleSignInModal();" value="Sign In">
+            <a class="pageTitle">ScriBBler</a>
+            <p class="subHeading">Explore, Imagine, Create</p>
+        </div>
+
+        <div class="postButtons">
+    
+            <input class="postBtn" type="button" id="allPosts" value="All Posts">
+            <input class="postBtn" type="button" onclick="toggleCreatePostModal();" value="Create Post">
+         </div>
+    </div>
+
+   <div class="modal" id="signInModal">
+    
+        <div class="headerModalContent">
+            <span class="modalClose" onclick="toggleSignInModal();">&times;</span>
+            <h1>Welcome Back!</h1>
+            <hr>
+            <form>
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+                <input id="signInBtn" type="submit" value="Sign In">
+            </form>
+            <h3>Not a member?
+                <a id="signUpRedirect" onclick="signUpModalRedirect();" href="javascript:void(0);">Sign Up</a>
+            </h3>
+        </div>
+    </div>
+
+    <div class="modal" id="signUpModal">
+    
+        <div class="headerModalContent">
+            <span class="modalClose" onclick="toggleSignUpModal();">&times;</span>
+            <h1>Get Started</h1>
+            <hr>
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Full Name" required>
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required>
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" required>
+                <input id="signUpBtn" type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="createPostModal">
+    
+        <div class="createPostModalContent">
+            <span class="modalClose" onclick="toggleCreatePostModal();">&times;</span>
+            <h1>Pen Your Post</h1>
+            <form id="createPostForm">
+                <label>Title:</label>
+                <input type="text" id="postTitle">
+                <label>Content:</label>
+                <textarea id="postContent" rows="15" cols="75"></textarea>
+                <button id="createPostBtn">Create</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="js\header.js"></script>
+    
+    <script src="js\index.js"></script>
+</body>
+
+</html>

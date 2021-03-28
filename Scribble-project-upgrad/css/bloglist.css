@@ -1,0 +1,169 @@
+body {
+    color: #fff;
+    height: 100%;
+    position: relative;
+    margin: 0 !important;
+    background-size: 2000% 2000%;
+    width: 100%;
+    background-color: orange;
+    
+}
+.post {
+    margin: 10px 10px 10px 20px;
+    height: 20%;
+    position: relative;
+    width: 90%;
+    float:left;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    flex: 0 45%;
+}
+.post-username{
+    overflow: hidden;
+}
+.post-left {
+    vertical-align: middle;
+    width: 15%;
+    color: #000;
+    display: table-cell;
+    text-align: center;
+    font-weight: bold;
+    max-width: 15%;
+    
+}
+.post-content {
+    width: 75%;
+    display: table-cell;
+    text-align: left;
+    background-color: #E8E8E8;
+    color: #000000;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px;
+}
+.post-title {
+    color: #2b312b;
+    height: 25px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    
+}
+.post-more {
+    font-size: 30px;
+    float: right;
+    padding-right: 0 !important;
+    font-size: 18px;
+    margin-right: 0 !important;
+    cursor: pointer;
+    padding-bottom: 10px;
+    
+}
+.post-desc {
+    height: 55px;
+    max-height: 110px;
+    overflow: hidden;
+    min-height: 20px;
+    margin-bottom: 0%;
+    
+
+}
+.modal {
+    top: 0;
+    display: none;
+    background-color: rgb(0,0,0);
+    position: fixed;
+    overflow: auto;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    color:black;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.9;
+}
+
+.allPostsContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    
+}
+.right {
+    float: right;
+}
+.trash-icon {
+    margin: 4%;
+    float: right;
+    cursor: pointer;
+    font-size: 25px !important;
+    
+}
+
+
+.modal-content {
+    animation-name: animatetop;
+    position: relative;
+    border: 1px solid #888;
+    margin: auto;
+    padding: 0;
+    width: 28%;
+    background-color: #ffffff;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-duration: 0.4s;
+    font-family: 'Abel', sans-serif;
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.btn-modal {
+    cursor: pointer;
+    border: none;
+    padding: 14px 50px;
+    color: white;
+
+}
+.color-black {
+    color:black;
+}
+.modal-body {
+    background: white !important;
+    padding: 5%;
+    
+}
+.red-btn {
+    background-color: #f44336;
+    width: 155px;
+}
+.green-btn {
+    width: 155px;
+    background-color: #4cae50;
+ 
+}
+.red-btn:hover {
+    background: #da190b;
+}
+
+.green-btn:hover {
+    background: #409243;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .post-title {
+        font-size: 17px;
+    }
+}

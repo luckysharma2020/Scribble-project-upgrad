@@ -1,0 +1,67 @@
+body{
+    background-position: center center;
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+    margin: 0 !important;
+    background-size: 100% cover!important;
+    background-attachment: fixed;
+    display: block;
+ }
+
+ .postBtn {
+     width: 100px;
+     margin: 0 5px;
+     padding: 8px;
+     font-family: Arial, Helvetica, sans-serif;
+     cursor: pointer;
+     font-weight: bold;
+     background: #ecd540;
+     color: black;
+     font-size: 90%;
+ }
+ 
+ #createPostBtn {
+    color: white;
+    background-color: #4CAF50;
+    margin: 15px auto;
+    padding: 12px 20px;
+    font-size: 90%;
+    cursor: pointer;
+    opacity: 0.9;
+    border: none;
+
+}
+ #postTitle {
+    background-color: #F1F1F1;
+     border: none;
+     padding: 15px 15px;
+     margin-bottom: 20px;
+     width : 45%;
+ }
+ #postContent {
+     background-color: #F1F1F1;
+     height: 300px;
+     resize: vertical;
+ }
+ #createPostBtn:hover {
+     opacity: 0.9;
+ }
+ .createPostModalContent {
+    width: 65%;
+     background-color: #fefefe;
+     padding: 0 20px;
+     margin: 2% auto;
+     border: 1px solid #888;
+     font-family: 'Abel', sans-serif;
+ }
+ .postButtons {
+    left: 50%;
+    position: absolute;
+    transform: translate(-59%, -49%);
+    top: 50%;
+}
+ #createPostForm {
+     padding: 0px 40px;
+ }

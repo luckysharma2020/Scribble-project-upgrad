@@ -1,0 +1,78 @@
+.blogAuthor {
+    
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+.blogTite {
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    
+}
+#editPostBtn {
+    border: none;
+    float: right;
+    cursor: pointer;
+    background-color: red;
+    padding: 10px 25px;
+    opacity: 0.8;
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(200,0,0,0.2), 0 6px 20px 0 rgba(190,0,0,0.19);
+}
+.blogText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#likeBlogBtn {
+    border-radius: 4px;
+    float: left;
+    cursor: pointer;
+    background-color: red;
+    opacity: 0.8;
+    text-align: center;
+    border: none;
+    width: 125px;
+    color: white;
+    padding: 10px 25px;
+    box-shadow: 0 8px 16px 0 rgba(200,0,0,0.2), 0 6px 20px 0 rgba(190,0,0,0.19);
+}
+.blogContent {
+    padding: 0 60px;
+}
+
+.likeBlog,
+.blogComments {
+    display: flex;
+    flex-direction: column;
+}
+#userComment {
+    margin-top: 10px;
+    width: 50%;
+    height: 75px;
+}
+#addUserCommentBtn {
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    color: white;
+    margin-top: 10px;
+    opacity: 0.8;
+    border: none;
+    padding: 10px 20px;
+    width: 100px;
+    background-color: red;
+    box-shadow: 0 8px 16px 0 rgba(200,0,0,0.2), 0 6px 20px 0 rgba(190,0,0,0.19);
+}
+
+#userCommentList {
+    background-color: lightgray;
+    padding: 10px 0;
+    width: 50%;
+    margin-bottom: 25px;
+}
+.commentBlock {
+    margin: 10px 20px;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 10px;
+}
